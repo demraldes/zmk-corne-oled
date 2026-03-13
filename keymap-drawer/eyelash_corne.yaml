@@ -197,5 +197,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
 combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
+- p: [38, 39]
+  k: {t: /, s: '?'}
+- p: [0, 1]
+  k: $$mdi:keyboard-esc$$
+- p: [24, 25]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [24, 23]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [38, 39, 40]
+  k: '?'
