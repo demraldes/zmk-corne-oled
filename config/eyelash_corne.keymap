@@ -91,6 +91,22 @@
         };
     };
 
+    macros {
+        windows_screensaver: windows_screensaver {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LCMD &kp R>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LS(C) &kp COLON &kp BSLH &kp LS(S) &kp DOT &kp L &kp N &kp K>,
+                <&macro_wait_time 100>,
+                <&kp ENTER>;
+
+            label = "WINDOWS_SCREENSAVER";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -133,9 +149,9 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &none      &none      &none     &none     &none                      &trans          &none    &sk F11   &sk F12   &none      &kp DEL    &trans
-&trans  &sk F1     &sk F2     &sk F3    &sk F4    &sk F5             &trans  &trans  &trans  &sk F6   &sk F7    &sk F8    &sk F9     &sk F10    &trans
-&trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LGUI  &kp ESC  &trans            &trans          &kp ESC  &sk RGUI  &sk RALT  &sk RCTRL  &sk RSHFT  &trans
+&trans  &none      &none      &none     &none     &none                      &trans          &none    &sk F11   &sk F12   &windows_screensaver  &kp DEL    &trans
+&trans  &sk F1     &sk F2     &sk F3    &sk F4    &sk F5             &trans  &trans  &trans  &sk F6   &sk F7    &sk F8    &sk F9                &sk F10    &trans
+&trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LGUI  &kp ESC  &trans            &trans          &kp ESC  &sk RGUI  &sk RALT  &sk RCTRL             &sk RSHFT  &trans
                               &trans    &trans    &trans                                     &trans   &trans    &trans
             >;
 
