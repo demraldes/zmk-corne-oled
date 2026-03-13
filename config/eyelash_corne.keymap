@@ -96,11 +96,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
                 <&kp LCMD &kp R>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
                 <&kp LS(C) &kp COLON &kp BSLH &kp LS(S) &kp DOT &kp L &kp N &kp K>,
                 <&macro_wait_time 100>,
+                <&macro_press>,
                 <&kp ENTER>;
 
             label = "WINDOWS_SCREENSAVER";
