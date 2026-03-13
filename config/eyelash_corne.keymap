@@ -100,10 +100,8 @@
                 <&kp LCMD &kp R>,
                 <&macro_release>,
                 <&macro_wait_time 50>,
-                <&macro_press>,
                 <&kp LS(C) &kp COLON &kp BSLH &kp LS(S) &kp DOT &kp L &kp N &kp K>,
                 <&macro_wait_time 100>,
-                <&macro_press>,
                 <&kp ENTER>;
 
             label = "WINDOWS_SCREENSAVER";
