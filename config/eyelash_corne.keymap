@@ -42,6 +42,15 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_WIN>, <&kp LEFT_WIN>;
+
+            tapping-term-ms = <155>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
