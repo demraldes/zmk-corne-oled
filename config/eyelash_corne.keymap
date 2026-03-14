@@ -51,7 +51,7 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_WIN>, <&kp LEFT_WIN>;
 
-            tapping-term-ms = <155>;
+            tapping-term-ms = <200>;
         };
     };
 
