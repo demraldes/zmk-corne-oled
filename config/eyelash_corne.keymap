@@ -41,11 +41,13 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+
+            label = "shift-caps";
         };
 
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD1";
+            label = "sticky_lgui-lgui";
             #binding-cells = <0>;
             bindings = <&sk LEFT_WIN>, <&kp LEFT_WIN>;
 
@@ -138,10 +140,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp GRAVE       &none      &none     &none     &kp BSLH                        &trans          &kp SEMI  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-&trans  &kp N1          &kp N2     &kp N3    &kp N4    &kp N5                  &trans  &trans  &trans  &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &trans
-&trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LGUI  &kp ESC   &kp C_MUTE            &trans          &kp ESC   &sk RGUI   &kp COMMA  &kp DOT   &kp FSLH  &trans
-                                   &trans    &trans    &trans                                          &trans    &trans     &trans
+&trans  &kp GRAVE       &none      &none     &none   &kp BSLH                        &trans          &kp SEMI  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
+&trans  &kp N1          &kp N2     &kp N3    &kp N4  &kp N5                  &trans  &trans  &trans  &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &trans
+&trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &td1    &kp ESC   &kp C_MUTE            &trans          &kp ESC   &sk RGUI   &kp COMMA  &kp DOT   &kp FSLH  &trans
+                                   &trans    &trans  &trans                                          &trans    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
