@@ -45,8 +45,8 @@ layers:
   - SYS
   - {t: '$$mdi:keyboard-tab$$', h: Fn}
   - NUMBER
-  - HOME
-  - END
+  - $$mdi:pan-up$$
+  - $$mdi:pan-down$$
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   NUMBER:
