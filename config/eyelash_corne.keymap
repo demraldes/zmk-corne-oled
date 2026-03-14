@@ -20,8 +20,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent = <1.5>;
     trigger-period-ms = <16>;
 };
 
@@ -140,10 +140,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp GRAVE       &none      &none     &none   &kp BSLH                        &trans          &kp SEMI  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-&trans  &kp N1          &kp N2     &kp N3    &kp N4  &kp N5                  &trans  &trans  &trans  &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &trans
-&trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &td1    &kp ESC   &kp C_MUTE            &trans          &kp ESC   &sk RGUI   &kp COMMA  &kp DOT   &kp FSLH  &trans
-                                   &trans    &trans  &trans                                          &trans    &trans     &trans
+&trans  &kp GRAVE       &none      &none     &none   &kp BSLH                                &mmv MOVE_UP                     &kp SEMI  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
+&trans  &kp N1          &kp N2     &kp N3    &kp N4  &kp N5                  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &trans
+&trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &td1    &kp ESC   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp ESC   &sk RGUI   &kp COMMA  &kp DOT   &kp FSLH  &trans
+                                   &trans    &trans  &trans                                                                   &trans    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
