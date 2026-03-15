@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - PgUp
+  - HOME
   - A
   - S
   - D
@@ -29,7 +29,7 @@ layers:
   - L
   - <
   - {t: ;, s: ':'}
-  - PgDn
+  - END
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
