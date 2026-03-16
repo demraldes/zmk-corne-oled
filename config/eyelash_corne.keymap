@@ -28,7 +28,7 @@
 
 &mt {
     tapping-term-ms = <155>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
 };
 
 &sk { quick-release; };
