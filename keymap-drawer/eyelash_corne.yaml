@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - PgUp
   - A
   - S
   - D
@@ -28,8 +28,8 @@ layers:
   - K
   - L
   - <
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, s: ':'}
+  - PgDn
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
