@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - '&td1'
   - $$mdi:keyboard-esc$$
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:keyboard-esc$$
   - {t: RGUI, h: '$$mdi:gesture-tap-hold$$'}
